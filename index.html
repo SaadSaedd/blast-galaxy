@@ -14,7 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&family=Poppins:ital,wght@0,200;0,600;0,700;1,300;1,400&family=Sixtyfour&display=swap">
-</head>
+        <style>
+            .slideText {
+                color: white; 
+            }
+        </style>
+    </head>
 
 <body>
     <section class="header">
@@ -50,10 +55,15 @@
         </section>
         <section id="slideshow">
             <img class="slide" src="images/slideshow1.jpg" alt="foto 1">
+            <div class="slideText">Slide 1 Text</div>
             <img class="slide" src="images/slideshow2.jpg" alt="foto 2">
+            <div class="slideText">Slide 2 Text</div>
             <img class="slide" src="images/slideshow3.jpg" alt="foto 3">
+            <div class="slideText">Slide 3 Text</div>
             <img class="slide" src="images/slideshow4.jpg" alt="foto 4">
+            <div class="slideText">Slide 4 Text</div>
             <img class="slide" src="images/slideshow5.jpg" alt="foto 5">
+            <div class="slideText">Slide 5 Text</div>
             <section id="dots">
                 <img class="dot" src="images/circle.png" alt="dot" onclick="currentSlide(1)">
                 <img class="dot" src="images/circle.png" alt="dot" onclick="currentSlide(2)">

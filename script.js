@@ -27,6 +27,7 @@ function currentSlide(n) {
 function showSlide(n) {
     var x = document.getElementsByClassName("slide");
     var dots = document.getElementsByClassName("dot");
+    var textContainer = document.getElementsByClassName("slideText");
     if (n > x.length) {
         slideIndex = 1
     }
@@ -34,12 +35,17 @@ function showSlide(n) {
         slideIndex = x.length
     }
     for (let i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+        x[i].style.display = "none";  
+        textContainer[i].style.display = "none";
+        
     }
     for (let i = 0; i < dots.length; i++) {
         dots[i].src = "images/circle.png"
     }
+
     x[slideIndex - 1].style.display = "inline";
+    textContainer[slideIndex - 1].style.display = "block";
+     
     dots[slideIndex - 1].src = "images/circle_filled.png"
 }
 

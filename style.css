@@ -40,6 +40,21 @@ body {
     margin: 2px;
 }
 
+main{
+    display: flex;
+}
+
+#text{
+    padding-left: 5vw;
+    align-self: center;
+    font-size: 18px;
+    width: 40vw;
+}
+
+#slideshow{
+    margin-left: 10vw;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +78,7 @@ nav {
 }
 
 nav img {
-    width: 150px;
+    width: 300px;
 }
 
 .nav-links {
@@ -79,11 +94,11 @@ nav img {
 }
 
 .nav-links ul li a {
+    font-family: "Sixtyfour", sans-serif;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 20px;
 }
-
 
 .footer {
     width: 100%;

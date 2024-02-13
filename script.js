@@ -42,3 +42,21 @@ function showSlide(n) {
     x[slideIndex - 1].style.display = "inline";
     dots[slideIndex - 1].src = "images/circle_filled.png"
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const numberOfStars = 50;
+
+    for (let i = 0; i < numberOfStars; i++) {
+      createStar();
+    }
+
+    function createStar() {
+      const star = document.createElement("div");
+      star.className = "star";
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`; 
+
+      document.body.appendChild(star);
+    }
+  });

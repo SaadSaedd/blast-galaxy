@@ -35,17 +35,18 @@ function showSlide(n) {
         slideIndex = x.length
     }
     for (let i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+        x[i].style.display = "none";
         textContainer[i].style.display = "none";
-        
+
     }
     for (let i = 0; i < dots.length; i++) {
         dots[i].src = "images/circle.png"
     }
 
     x[slideIndex - 1].style.display = "inline";
-    textContainer[slideIndex - 1].style.display = "block";
-     
+    textContainer[slideIndex - 1].style.display = "inline";
+    textContainer[slideIndex - 1].style.color = "white";
+
     dots[slideIndex - 1].src = "images/circle_filled.png"
 }
 
@@ -67,7 +68,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-let downArrow = document.getElementsByClassName("fa-chevron-down")[0]
+let downArrow = document.getElementsByClassName("fa-solid fa-chevron-down")[0]
 downArrow.addEventListener("click", (e) => {
-    window.location.href = "#text"
+    if (downArrow.classList.contains("up")) {
+        window.location.href = "#top"
+        downArrow.classList.remove("up")
+    }
+    else{
+        window.location.href = "#text"
+        downArrow.classList.add("up")
+    }
 })

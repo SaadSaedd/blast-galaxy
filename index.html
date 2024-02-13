@@ -1,38 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLAST GALAXY</title>
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,700;1,300;1,400&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,700;1,300;1,400&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&family=Poppins:ital,wght@0,200;0,600;0,700;1,300;1,400&family=Sixtyfour&display=swap">
-        <style>
-            .slideText {
-                color: white; 
-            }
-        </style>
-    </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&family=Poppins:ital,wght@0,200;0,600;0,700;1,300;1,400&family=Sixtyfour&display=swap">
+</head>
 
 <body>
-    <section class="header">
+    <section class="header" id="top">
         <nav>
-
             <section class="test2">
                 <div id="spiral" class="spiral"></div>
                 <div id="spiral2" class="spiral"></div>
             </section>
-
-            <a href="index.html"><img src="images/blast-galaxy-logo.webp"></a>
+            <a href="index.html"><img src="images/blast-galaxy-logo.webp" alt="blast-galaxy-logo"></a>
             <div class="nav-links" id="navLinks">
-
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="https://blastgalaxy.nl/our-games/">GAMES</a></li>
@@ -40,30 +29,22 @@
                     <li><a href="https://blastgalaxy.nl/contact/">CONTACT</a></li>
                 </ul>
             </div>
-
         </nav>
     </section>
     <i class="fa-solid fa-chevron-down"></i>
     <main>
         <section id="text">
-            <p>Blast Galaxy is een unieke arcadeclub, gevestigd Amsterdam. Ze bewijzen dat de magie van de arcade vandaag de
-                dag net zo sterk en boeiend is als altijd. De geluiden, de lichten, de prachtige kasten, ze hebben de meest
-                verbazingwekkende arcadespellen verzameld (meer dan 100) voor jou om te genieten, zo lang als je wilt zonder
-                je zorgen te maken over munten, met behulp van een enkele toegangsprijs.</p>
-            <p>We hebben een beoordeling van 4.5 op tripadvisor, wat aangeeft dat bezoekers over het algemeen een positieve
-                ervaring hebben bij Blast Galaxy.</p>
+            <p>Blast Galaxy is een unieke arcadeclub, gevestigd Amsterdam. Ze bewijzen dat de magie van de arcade vandaag de dag net zo sterk en boeiend is als altijd.
+                De geluiden, de lichten, de prachtige kasten, ze hebben de meest verbazingwekkende arcadespellen verzameld (meer dan 100) voor jou om te genieten,
+                zo lang als je wilt zonder je zorgen te maken over munten, met behulp van een enkele toegangsprijs.</p>
+            <p>We hebben een beoordeling van 4.5 op tripadvisor, wat aangeeft dat bezoekers over het algemeen een positieve ervaring hebben bij Blast Galaxy.</p>
         </section>
         <section id="slideshow">
             <img class="slide" src="images/slideshow1.jpg" alt="foto 1">
-            <div class="slideText">Slide 1 Text</div>
             <img class="slide" src="images/slideshow2.jpg" alt="foto 2">
-            <div class="slideText">Slide 2 Text</div>
             <img class="slide" src="images/slideshow3.jpg" alt="foto 3">
-            <div class="slideText">Slide 3 Text</div>
             <img class="slide" src="images/slideshow4.jpg" alt="foto 4">
-            <div class="slideText">Slide 4 Text</div>
             <img class="slide" src="images/slideshow5.jpg" alt="foto 5">
-            <div class="slideText">Slide 5 Text</div>
             <section id="dots">
                 <img class="dot" src="images/circle.png" alt="dot" onclick="currentSlide(1)">
                 <img class="dot" src="images/circle.png" alt="dot" onclick="currentSlide(2)">
@@ -71,18 +52,22 @@
                 <img class="dot" src="images/circle.png" alt="dot" onclick="currentSlide(4)">
                 <img class="dot" src="images/circle.png" alt="dot" onclick="currentSlide(5)">
             </section>
+            <div class="slideText">Slide 1 Text</div>
+            <div class="slideText">Slide 2 Text</div>
+            <div class="slideText">Slide 3 Text</div>
+            <div class="slideText">Slide 4 Text</div>
+            <div class="slideText">Slide 5 Text</div>
         </section>
     </main>
     <section class="footer">
-        
-        <p>volg ons om elke media platform </p>
+        <p>volg ons op elk media platform</p>
         <div class="icons">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin"></i>
         </div>
-        <p>gemaakt door Saad, Robin en Daniel <i class="fa-solid fa-fire"></i></p>
+        <p>Gemaakt door Saad, Robin en Daniel <i class="fa-solid fa-fire"></i></p>
     </section>
 </body>
 

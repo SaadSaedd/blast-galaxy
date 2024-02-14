@@ -209,3 +209,61 @@ nav img {
     animation: spiral 4s linear infinite;
     font-family: "Sixtyfour", sans-serif;
 }
+
+.container{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container > .rocket{
+    position:relative;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 37.5%;
+}
+.container > .rocket i {
+    background: linear-gradient(cyan,#00aaff,#138ed4,#2d36d8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: absolute;
+    font-size: 6rem;
+    transform: rotate(-45deg);
+    animation: move 0.2s linear infinite;
+    z-index: 1;
+}
+.container .rocket::before{
+    content: " ";
+    position: absolute;
+    top: 100px;
+    left: 43%;
+    width: 15px;
+    height: 150px;
+    background: linear-gradient(#e65c00, transparent);
+}
+.container .rocket::after{
+    content: " ";
+    position: absolute;
+    top: 120px;
+    left: 43%;
+    width: 15px;
+    height: 150px;
+    background: linear-gradient(#e65c00, transparent);
+    filter: blur(20px);
+    z-index: 1;
+}
+
+
+
+@keyframes move {
+    0% , 100%{
+        top: 35%;
+    }
+    50%{
+        top: 40%;
+    }
+}
+
